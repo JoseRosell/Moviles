@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "activity_main">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home"/>
+        <item
+                android:id="@+id/navRecetas"
+                android:icon="@drawable/baseline_emoji_food_beverage_24"
+                android:title="Recetas"/>
+        <item
+                android:id="@+id/navTabla"
+                android:icon="@drawable/baseline_tabla_24"
+                android:title="Tablas"/>
+        <item
+                android:id="@+id/navUbicacion"
+                android:icon="@drawable/baseline_location_pin_24"
+                android:title="Ubicación"/>
+        <item
+                android:id="@+id/navCerrarSesion"
+                android:icon="@drawable/baseline_cerrar_24"
+                android:title="Cerrar sesión"/>
+
+
+
+    </group>
+</menu>

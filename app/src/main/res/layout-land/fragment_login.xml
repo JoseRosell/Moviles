@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#FFFFFF">
+    <ImageView
+            android:layout_width="325dp"
+            android:layout_height="107dp" app:srcCompat="@drawable/ejerciciologo" android:id="@+id/imageView2"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"/>
+    <Button
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            app:layout_constraintTop_toTopOf="@+id/registerHere" app:layout_constraintStart_toEndOf="@+id/registerHere"
+            android:layout_marginStart="4dp"
+            />
+    <Button
+            android:id="@+id/registerHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register here"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="92dp" app:layout_constraintTop_toBottomOf="@+id/txtContraseña"
+            android:layout_marginTop="8dp"/>
+    <Button
+            android:text="Submit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" android:id="@+id/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="80dp" app:layout_constraintTop_toTopOf="@+id/textInputLayout"/>
+    <Button
+            android:text="Login with facebook"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/logFacebook"
+            app:layout_constraintStart_toStartOf="@+id/submit"
+            android:layout_marginTop="23dp"
+            app:layout_constraintTop_toBottomOf="@+id/submit"
+            android:drawableLeft="@drawable/logofacebook"/>
+    <Button
+            android:text="Login with google"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/logGoogle"
+            app:layout_constraintStart_toStartOf="@+id/submit"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/logFacebook"
+            android:drawableLeft="@drawable/logogoogle"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContraseña"
+            app:layout_constraintStart_toStartOf="@+id/registerHere" android:hint="Contraseña"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="172dp" android:layout_marginStart="4dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/txtContraseña"
+            android:hint="Usuario" android:id="@+id/textInputLayout" android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtContraseña">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

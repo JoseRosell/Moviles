@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".FragmentFormulario"
+                                                   android:id="@+id/formularioFragment" android:visibility="visible"
+                                                   android:background="@color/white">
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imagenPerfil"
+            android:background="@color/design_default_color_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintVertical_bias="0.064"/>
+    <TextView
+            android:text="Fecha de nacimiento"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:id="@+id/fechaNacimiento"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/btSeleccionaFecha"
+            app:layout_constraintTop_toTopOf="@+id/btSeleccionaFecha"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="Selecciona la fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSeleccionaFecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="104dp"
+            app:layout_constraintTop_toBottomOf="@+id/imagenPerfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.861"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenPerfil"
+            android:id="@+id/textInputLayout2"
+            android:layout_marginTop="24dp"
+            app:layout_constraintHorizontal_bias="0.504">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electronico"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:textColorHint="@color/black"
+                android:id="@+id/nickname"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="172dp"
+            app:layout_constraintTop_toBottomOf="@+id/imagenPerfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495" android:id="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Contraseña"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:maxLines="1"
+                android:id="@+id/contrasena"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+            android:text="Foto de perfil"
+            android:layout_width="116dp"
+            android:layout_height="25dp" android:id="@+id/textView"
+            android:layout_marginStart="17dp" app:layout_constraintStart_toEndOf="@+id/imagenPerfil"
+            app:layout_constraintTop_toTopOf="@+id/imagenPerfil" android:layout_marginTop="38dp"/>
+    <Button
+            android:text="Crear cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/crearCuenta"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="52dp" app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintHorizontal_bias="0.498"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
