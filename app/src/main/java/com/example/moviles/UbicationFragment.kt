@@ -138,7 +138,7 @@ class UbicationFragment : Fragment() {
         mapController.setZoom(12.0)
 
         //Servigroup Marina Playa
-        val startPoint = GeoPoint(37,130532, -3,583732);
+        val startPoint = GeoPoint(37.130532, -3.583732);
         mapController.setCenter(startPoint);
 
 //        /* MARCADORES */
